@@ -95,6 +95,14 @@
   .social-btn:hover { background: rgba(201,168,76,0.12); border-color: var(--gold); }
   .social-btn svg { width: 18px; height: 18px; fill: var(--gold); flex-shrink: 0; }
 
+  /* FEATURED INSTAGRAM POST */
+  .ig-featured-outer { padding: 0 24px 56px; }
+  .ig-featured-outer .section-label,
+  .ig-featured-outer .section-title { text-align: center; }
+  .ig-featured-outer .section-title { margin-bottom: 28px; }
+  .ig-embed-wrap { max-width: 400px; margin: 0 auto; border-radius: 12px; overflow: hidden; }
+  .ig-embed-wrap .instagram-media { margin: 0 auto !important; border-radius: 12px !important; }
+
   /* FOOTER */
   footer { padding: 28px 24px; text-align: center; background: var(--navy); border-top: 1px solid rgba(201,168,76,0.15); }
   footer p { font-size: 13px; color: rgba(255,255,255,0.35); }
@@ -425,6 +433,17 @@
   </div>
 </section>
 
+<!-- FEATURED INSTAGRAM POST -->
+<section class="ig-featured-outer">
+  <div class="section-wrap">
+    <span class="section-label">From Instagram</span>
+    <h2 class="section-title">Featured Post</h2>
+    <div class="ig-embed-wrap">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Daygfwypyc9/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; margin:0 auto; max-width:400px; width:100%;"></blockquote>
+    </div>
+  </div>
+</section>
+
 <footer>
   <p>To God be the glory &nbsp;<span>✦</span>&nbsp; Josh Kukus</p>
 </footer>
@@ -520,6 +539,9 @@
   loadLatestVideo('embed-crbc',           'PL6RXzPfS-RQdaGxF7g97raS7ydKzcPV17');
   loadLatestVideo('embed-crossexamined',  'PLU-nJq1k5wmjepv8FZv6MdFP02DgokgCt');
 </script>
+
+<!-- Instagram embed script: renders the blockquote above as the live post/reel -->
+<script async src="//www.instagram.com/embed.js"></script>
 
 </body>
 </html>
