@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Josh Kukus | Christian Testimony, Faith Journey & Recommended Resources</title>
+<meta name="description" content="The Christian testimony of Josh Kukus. A personal story of faith, surrender to Jesus Christ, and resources that have shaped his walk with God."/>
+<meta property="og:title" content="Josh Kukus | Christian Testimony and Faith Journey">
+<meta property="og:description" content="A personal testimony of faith in Jesus Christ and the journey that led to surrendering everything to Him.">
+<meta property="og:url" content="https://kukus.website/">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0d1b3e;
+    --navy-mid: #162554;
+    --navy-light: #1e3370;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --cream: #f9f5ed;
+    --text-dark: #0d1b3e;
+    --text-muted: #4a5578;
+    --white: #ffffff;
+    --divider: rgba(201,168,76,0.3);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--text-dark); min-height: 100vh; }
+
+  /* HERO */
+  .hero { background: var(--navy); padding: 72px 32px 64px; text-align: center; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%); pointer-events: none; }
+  .cross-icon { display: block; width: 36px; height: 44px; margin: 0 auto 20px; }
+  .hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+  .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 7vw, 72px); font-weight: 500; color: var(--white); line-height: 1.05; margin-bottom: 10px; }
+  .hero-subtitle { font-family: 'Cormorant Garamond', serif; font-size: clamp(18px, 3vw, 24px); font-style: italic; color: var(--gold-light); margin-bottom: 36px; }
+  .hero-divider { width: 48px; height: 1px; background: var(--gold); margin: 0 auto 36px; opacity: 0.6; }
+  .hero-verse { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-style: italic; color: rgba(255,255,255,0.65); max-width: 400px; margin: 0 auto; line-height: 1.7; }
+
+  /* LAYOUT */
+  .section-wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; display: block; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 40px); font-weight: 500; color: var(--navy); line-height: 1.2; }
+
+  /* VERSE OF THE DAY */
+  .votd-outer { padding: 56px 24px 0; }
+  .votd-card { background: var(--navy); border-radius: 16px; padding: 36px 40px; position: relative; overflow: hidden; }
+  .votd-card::before { content: '\201C'; font-family: 'Cormorant Garamond', serif; font-size: 120px; color: rgba(201,168,76,0.12); position: absolute; top: -10px; left: 20px; line-height: 1; pointer-events: none; }
+  .votd-label { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+  .votd-label::after { content: ''; flex: 1; height: 1px; background: rgba(201,168,76,0.25); }
+  .votd-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 3vw, 26px); font-style: italic; color: var(--white); line-height: 1.65; margin-bottom: 20px; }
+  .votd-ref { font-size: 13px; font-weight: 500; color: var(--gold-light); letter-spacing: 0.05em; }
+
+  /* TESTIMONY */
+  .testimony-outer { padding: 56px 24px; }
+  .testimony-block { margin-bottom: 40px; }
+  .testimony-block-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--navy-light); margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--divider); }
+  .testimony-block p { font-size: 16px; line-height: 1.85; color: #2a3452; margin-bottom: 14px; }
+  .testimony-block p:last-child { margin-bottom: 0; }
+  .pull-quote { border-left: 3px solid var(--gold); padding: 12px 20px; margin: 24px 0; background: rgba(201,168,76,0.06); border-radius: 0 8px 8px 0; }
+  .pull-quote p { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: var(--navy-mid); margin: 0; line-height: 1.7; }
+  .pull-quote cite { display: block; font-size: 12px; font-style: normal; color: var(--text-muted); margin-top: 8px; letter-spacing: 0.04em; }
+  .truth-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 24px 0; }
+  .truth-card { background: var(--navy); border-radius: 12px; padding: 20px; }
+  .truth-card-label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light) !important; margin-bottom: 8px; }
+  .truth-card-body { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: var(--white) !important; line-height: 1.65; }
+
+  /* CREATORS */
+  .creators-outer { background: var(--navy-mid); padding: 56px 24px; }
+  .creators-outer .section-title { color: var(--white); margin-bottom: 8px; }
+  .creators-intro { font-size: 15px; color: rgba(255,255,255,0.55); margin-bottom: 40px; margin-top: 10px; line-height: 1.6; }
+  .creator-block { margin-bottom: 52px; }
+  .creator-block:last-child { margin-bottom: 0; }
+  .creator-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid rgba(201,168,76,0.2); flex-wrap: wrap; }
+  .creator-avatar { width: 40px; height: 40px; border-radius: 50%; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 600; color: var(--gold); flex-shrink: 0; }
+  .creator-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); }
+  .creator-desc { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 1px; }
+  .creator-link { margin-left: auto; font-size: 12px; color: var(--gold); text-decoration: none; border: 1px solid rgba(201,168,76,0.35); padding: 5px 14px; border-radius: 999px; white-space: nowrap; flex-shrink: 0; }
+  .creator-link:hover { background: rgba(201,168,76,0.12); }
+  .video-grid { display: grid; gap: 16px; }
+  .video-grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .video-card { border-radius: 12px; overflow: hidden; background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.15); }
+  .video-embed { position: relative; padding-bottom: 56.25%; height: 0; }
+  .video-embed.shorts { padding-bottom: 177.78%; }
+  .video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+  .video-embed .yt-loading { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 13px; color: rgba(255,255,255,0.3); font-family: 'Inter', sans-serif; }
+  .video-caption { padding: 10px 14px; font-size: 13px; color: rgba(255,255,255,0.45); }
+  .shorts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+
+  /* SOCIAL */
+  .social-outer { background: var(--navy); padding: 56px 24px; text-align: center; }
+  .social-outer .section-title { color: var(--white); margin-bottom: 32px; margin-top: 6px; }
+  .social-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .social-btn { display: flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px; border: 1px solid rgba(201,168,76,0.4); background: transparent; color: var(--white); font-size: 14px; font-weight: 500; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+  .social-btn:hover { background: rgba(201,168,76,0.12); border-color: var(--gold); }
+  .social-btn svg { width: 18px; height: 18px; fill: var(--gold); flex-shrink: 0; }
+
+  /* FOOTER */
+  footer { padding: 28px 24px; text-align: center; background: var(--navy); border-top: 1px solid rgba(201,168,76,0.15); }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.35); }
+  footer span { color: var(--gold); opacity: 0.7; }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .votd-card { padding: 28px 24px; }
+    .hero { padding: 56px 20px 48px; }
+    .creator-link { margin-left: 0; }
+  }
+
+  /* FORM */
+  .cta-section {
+  padding: 60px 20px;
+  background: #f9f6f1;
+  text-align: center;
+}
+
+.cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.contact-form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #8b6f47;
+}
+
+.h-captcha {
+  margin-top: 8px;
+}
+
+.submit-btn {
+  padding: 12px 28px;
+  background: #8b6f47;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background: #7a5f3a;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Josh Kukus",
+  "url": "https://kukus.website",
+  "description": "Christian testimony and faith journey.",
+  "knowsAbout": [
+    "Christianity",
+    "Faith",
+    "Jesus Christ",
+    "Bible Study"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <svg class="cross-icon" viewBox="0 0 36 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="14" y="0" width="8" height="44" rx="2" fill="#c9a84c" opacity="0.85"/>
+    <rect x="0" y="13" width="36" height="8" rx="2" fill="#c9a84c" opacity="0.85"/>
+  </svg>
+  <p class="hero-eyebrow">To the glory of God</p>
+  <h1 class="hero-name">My Testimony of Faith in Jesus Christ</h1>
+  <p class="hero-subtitle">From Self-Reliance to Surrender</p>
+  <div class="hero-divider"></div>
+  <p class="hero-verse">"Our citizenship is in heaven." — Philippians 3:20</p>
+</header>
+
+<!-- VERSE OF THE DAY -->
+<div class="votd-outer">
+  <div class="section-wrap">
+    <div class="votd-card">
+      <p class="votd-label">Verse of the day</p>
+      <div id="votd-content">
+        <p class="votd-text" style="color:rgba(255,255,255,0.3);font-size:18px;">Loading today's verse…</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONY -->
+<div class="testimony-outer">
+  <div class="section-wrap">
+    <span class="section-label">My story</span>
+    <h2 class="section-title">My Testimony</h2>
+    <div style="margin-top:32px;">
+
+      <div class="testimony-block">
+        <h3 class="testimony-block-title">The Foundation of Self-Reliance</h3>
+        <p>I grew up attending a traditional church in Colorado, but Sunday always felt more like a chore than a relationship. As I got older, I stopped thinking about God entirely. I focused on being a moral, hard-working man.</p>
+        <p>Becoming a husband and father only reinforced my self-reliance, pride, and self-righteousness. I thought I could handle life on my own terms.</p>
+      </div>
+
+      <div class="testimony-block">
+        <h3 class="testimony-block-title">The Turning Point</h3>
+        <p>That changed in September of 2025. My wife Gina and I were navigating a deeply difficult season, heartbroken by the tragic loss of Charlie Kirk. We quickly realized that despite building a happy, productive life, nothing we achieved could satisfy our underlying fear and anxiety.</p>
+        <p>During this painful time, a faithful friend, Jennifer Clark, shared the gospel with Gina and prayed for her. It resonated deeply.</p>
+        <div class="pull-quote">
+          <p>"If I find in myself a desire which no experience in this world can satisfy, the most probable explanation is that I was made for another world."</p>
+          <cite>— C.S. Lewis</cite>
+        </div>
+      </div>
+
+      <div class="testimony-block">
+        <h3 class="testimony-block-title">Gripped by the Truth</h3>
+        <p>We began attending church as a family. I dove into the Bible and Christian podcasts, completely gripped by the truth of the Gospel. God showed me three sobering realities:</p>
+        <div class="truth-grid">
+          <div class="truth-card">
+            <p class="truth-card-label">True Sin</p>
+            <p class="truth-card-body">Sin isn't just bad deeds — it's refusing to be who God created me to be.</p>
+          </div>
+          <div class="truth-card">
+            <p class="truth-card-label">The Cost</p>
+            <p class="truth-card-body">The wages of sin is separation from God, both now and in eternity.</p>
+          </div>
+          <div class="truth-card">
+            <p class="truth-card-label">The Rescue</p>
+            <p class="truth-card-body">God loves me so much that He came in the flesh, lived a perfect life, and died to pay a debt I couldn't pay.</p>
+          </div>
+        </div>
+        <p>I came to understand that Satan is perfectly content with "moral men," so long as they live without Jesus Christ and nothing I can do will earn my salvation. Grace through faith alone, in Jesus Christ alone</p>
+      </div>
+
+      <div class="testimony-block">
+        <h3 class="testimony-block-title">A New Purpose</h3>
+        <p>Today, I know Jesus is alive, living in me, and seated at the right hand of God. My highest calling is no longer just providing a comfortable life for my family. My true purpose as a husband and father is to lead my family to trust in the finished work of Jesus Christ.</p>
+        <p>I am incredibly grateful for our church community, and honored to have surrendered my heart to Jesus and been baptized alongside my wife. He has completely transformed my behavior, my perspective, and my priorities.</p>
+        <div class="pull-quote">
+          <p>"Our citizenship is in heaven."</p>
+          <cite>— Philippians 3:20</cite>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CREATORS -->
+<section class="creators-outer">
+  <div class="section-wrap">
+    <span class="section-label">Voices I recommend</span>
+    <h2 class="section-title">Creators Worth Your Time</h2>
+    <p class="creators-intro">These are teachers, preachers, and thinkers whose work has shaped my faith. I share them here to God's glory — all credit belongs to them and to Him.</p>
+
+    <!-- Pastor Josh Howerton -->
+    <div class="creator-block">
+      <div class="creator-header">
+        <div class="creator-avatar">JH</div>
+        <div>
+          <p class="creator-name">Pastor Josh Howerton</p>
+          <p class="creator-desc">Lakepoint Church · Pastor & Teacher</p>
+        </div>
+        <a class="creator-link" href="https://www.youtube.com/playlist?list=PLk-gIybirb957FH4Ke_QzRbaxjiOOfCv4" target="_blank" rel="noopener">Lakepoint Church ↗</a>
+        <a class="creator-link" href="https://www.youtube.com/playlist?list=PLk-gIybirb94bgwkcweCIuQ3HwSAUFCBR" target="_blank" rel="noopener">Live Free ↗</a>
+      </div>
+      <div class="video-grid cols-2">
+        <div class="video-card">
+          <div class="video-embed" id="embed-lakepoint">
+            <span class="yt-loading">Loading…</span>
+          </div>
+          <p class="video-caption">Lakepoint Church</p>
+        </div>
+        <div class="video-card">
+          <div class="video-embed" id="embed-livefree">
+            <span class="yt-loading">Loading…</span>
+          </div>
+          <p class="video-caption">Live Free Podcast</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Allie Beth Stuckey -->
+    <div class="creator-block">
+      <div class="creator-header">
+        <div class="creator-avatar">AB</div>
+        <div>
+          <p class="creator-name">Allie Beth Stuckey</p>
+          <p class="creator-desc">Relatable · Biblical commentary & culture</p>
+        </div>
+        <a class="creator-link" href="https://www.youtube.com/@AllieBethStuckey/videos" target="_blank" rel="noopener">View channel ↗</a>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-embed" id="embed-allie">
+            <span class="yt-loading">Loading…</span>
+          </div>
+          <p class="video-caption">Latest video</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRBC Shorts -->
+    <div class="creator-block">
+      <div class="creator-header">
+        <div class="creator-avatar">CR</div>
+        <div>
+          <p class="creator-name">Canopy Roads Baptist Church</p>
+          <p class="creator-desc">My home church</p>
+        </div>
+        <a class="creator-link" href="https://www.youtube.com/playlist?list=PL6RXzPfS-RQdaGxF7g97raS7ydKzcPV17" target="_blank" rel="noopener">View playlist ↗</a>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-embed" id="embed-crbc">
+            <span class="yt-loading">Loading…</span>
+          </div>
+          <p class="video-caption">Latest short</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cross Examined Shorts -->
+    <div class="creator-block">
+      <div class="creator-header">
+        <div class="creator-avatar">CE</div>
+        <div>
+          <p class="creator-name">Cross Examined — Frank Turek</p>
+          <p class="creator-desc">Christian apologetics</p>
+        </div>
+        <a class="creator-link" href="https://www.youtube.com/playlist?list=PLU-nJq1k5wmjepv8FZv6MdFP02DgokgCt" target="_blank" rel="noopener">View shorts ↗</a>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-embed" id="embed-crossexamined">
+            <span class="yt-loading">Loading…</span>
+          </div>
+          <p class="video-caption">Latest short</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>What's your story?</h2>
+    <p>Whether you are currently walking through a wilderness season, wrestling with deep doubts, or looking for a sounding board — I'd love to pray for you or hear about your own journey. Drop a line below.</p>
+
+    <form action="https://formspree.io/f/xqevkvnp" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Share your story or prayer request..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section class="social-outer">
+  <div class="section-wrap">
+    <span class="section-label">Connect</span>
+    <h2 class="section-title">Find Me Online</h2>
+    <div class="social-links">
+      <a href="https://x.com/KukusjbK" class="social-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        X (Twitter)
+      </a>
+      <a href="https://www.instagram.com/s1ved/" class="social-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>To God be the glory &nbsp;<span>✦</span>&nbsp; Josh Kukus</p>
+</footer>
+
+<script>
+  // ── Verse of the Day ──────────────────────────────────────────────────────
+  const verses = [
+    { text: "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.", ref: "Jeremiah 29:11" },
+    { text: "I can do all this through him who gives me strength.", ref: "Philippians 4:13" },
+    { text: "A new commandment I give you: Love one another. As I have loved you, so you shall love one another. By this all men will know that you are my disciples, if you have love for one another.", ref: "John 13:34" },
+    { text: "If you continue in my word, you are truly my disciples and you shall know the truth, and the truth will set you free.", ref: "John 8:31" },
+    { text: "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.", ref: "John 3:16" },
+    { text: "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.", ref: "Proverbs 3:5–6" },
+    { text: "But seek first his kingdom and his righteousness, and all these things will be given to you as well.", ref: "Matthew 6:33" },
+    { text: "The Lord is my shepherd, I lack nothing.", ref: "Psalm 23:1" },
+    { text: "Greater love has no one than this: to lay down one's life for one's friends.", ref: "John 15:13" },
+    { text: "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.", ref: "Joshua 1:9" },
+    { text: "Our citizenship is in heaven. And we eagerly await a Savior from there, the Lord Jesus Christ.", ref: "Philippians 3:20" },
+    { text: "He gives strength to the weary and increases the power of the weak.", ref: "Isaiah 40:29" },
+    { text: "Therefore, if anyone is in Christ, the new creation has come: the old has gone, the new is here!", ref: "2 Corinthians 5:17" },
+    { text: "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.", ref: "Romans 8:28" },
+    { text: "For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God.", ref: "Ephesians 2:8" },
+    { text: "Come to me, all you who are weary and burdened, and I will give you rest.", ref: "Matthew 11:28" },
+    { text: "Greater love has no one than this: to lay down one's life for one's friends.", ref: "John 15:13" },
+    { text: "I have been crucified with Christ and I no longer live, but Christ lives in me.", ref: "Galatians 2:20" },
+    { text: "Cast all your anxiety on him because he cares for you.", ref: "1 Peter 5:7" },
+    { text: "Do not be conformed to this world, but be transformed by the renewing of your mind, that by testing you may discern the will of God, what is good, pleasing and perfect", ref: "Romans 12:2" },
+    { text: "For it is God who works in you, to will and to act according to his purpose", ref: "Phillipians 2:13" },
+    { text: "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.", ref: "Romans 6:23" },
+    { text: "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.", ref: "Isaiah 40:31" },
+    { text: "Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'", ref: "John 14:6" },
+    { text: "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.", ref: "Romans 8:38–39" },
+    { text: "Rejoice always, pray continually, give thanks in all circumstances; for this is God's will for you in Christ Jesus.", ref: "1 Thessalonians 5:16–18" },
+    { text: "Do not conform to the pattern of this world, but be transformed by the renewing of your mind.", ref: "Romans 12:2" },
+    { text: "Let your light shine before others, that they may see your good deeds and glorify your Father in heaven.", ref: "Matthew 5:16" },
+    { text: "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning.", ref: "Lamentations 3:22–23" },
+    { text: "No, in all these things we are more than conquerors through him who loved us.", ref: "Romans 8:37" },
+    { text: "Taste and see that the Lord is good; blessed is the one who takes refuge in him.", ref: "Psalm 34:8" },
+    { text: "For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.", ref: "Ephesians 2:10" },
+    { text: "Delight yourself in the Lord, and he will give you the desires of your heart.", ref: "Psalm 37:4" },
+    { text: "Search me, God, and know my heart; test me and know my anxious thoughts.", ref: "Psalm 139:23" },
+    { text: "Or do you not know that the body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.", ref: "1 Corinthians 6:19-20" },
+    { text: "He has made everything beautiful in its time.", ref: "Ecclesiastes 3:11" },
+    { text: "But the fruit of the spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.", ref: "Galatians 5:22-23" },
+    { text: "The thief comes only to steal and kill and destroy; I have come that they may have life, and have it to the full.", ref: "John 10:10" },
+    { text: "If anyone would come after me, let him deny himself and take up his cross and follow me.", ref: "Luke 9:23" },
+    { text: "I am the vine and you are the branches, whoever abides in me and I in him will bear much fruit, for apart from me you can do nothing.", ref: "John 15:5" },
+  ];
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  const dayOfYear = Math.floor((now - start) / 86400000);
+  const v = verses[dayOfYear % verses.length];
+  document.getElementById('votd-content').innerHTML =
+    '<p class="votd-text">\u201C' + v.text + '\u201D</p><p class="votd-ref">' + v.ref + '</p>';
+
+  // ── YouTube Latest Video Loader ───────────────────────────────────────────
+  const YT_API_KEY = 'AIzaSyBw94UrScdtQ4lnx2GnBnUK2SXdcVZo0kg';
+
+  async function loadLatestVideo(embedId, playlistId) {
+  const container = document.getElementById(embedId);
+  if (!container) return;
+  try {
+    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${playlistId}&key=${YT_API_KEY}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (!data.items || data.items.length === 0) throw new Error('No items');
+
+    // Sort by publishedAt date descending to get the true latest
+    const sorted = data.items.sort((a, b) =>
+      new Date(b.snippet.publishedAt) - new Date(a.snippet.publishedAt)
+    );
+
+    const videoId = sorted[0].snippet.resourceId.videoId;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
+    iframe.title = 'Latest video';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.loading = 'lazy';
+    iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+    container.innerHTML = '';
+    container.appendChild(iframe);
+  } catch (e) {
+    container.innerHTML = '<span class="yt-loading">Could not load video.</span>';
+    console.error('YT load error for', playlistId, e);
+  }
+}
+
+  // Map: embed container ID → YouTube playlist ID
+  loadLatestVideo('embed-lakepoint',      'PLk-gIybirb957FH4Ke_QzRbaxjiOOfCv4');
+  loadLatestVideo('embed-livefree',       'PLk-gIybirb94bgwkcweCIuQ3HwSAUFCBR');
+  loadLatestVideo('embed-allie',          'PLVKRQHZ1Ya2EMN1A9Iy5QNhB69tZbNPyR');
+  loadLatestVideo('embed-crbc',           'PL6RXzPfS-RQdaGxF7g97raS7ydKzcPV17');
+  loadLatestVideo('embed-crossexamined',  'PLU-nJq1k5wmjepv8FZv6MdFP02DgokgCt');
+</script>
+
+</body>
+</html>
