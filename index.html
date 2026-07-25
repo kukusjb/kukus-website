@@ -95,13 +95,10 @@
   .social-btn:hover { background: rgba(201,168,76,0.12); border-color: var(--gold); }
   .social-btn svg { width: 18px; height: 18px; fill: var(--gold); flex-shrink: 0; }
 
-  /* FEATURED INSTAGRAM POST */
-  .ig-featured-outer { padding: 0 24px 56px; }
-  .ig-featured-outer .section-label,
-  .ig-featured-outer .section-title { text-align: center; }
-  .ig-featured-outer .section-title { margin-bottom: 28px; }
-  .ig-embed-wrap { max-width: 400px; margin: 0 auto; border-radius: 12px; overflow: hidden; }
-  .ig-embed-wrap .instagram-media { margin: 0 auto !important; border-radius: 12px !important; }
+  /* LATEST SHORT (within social section) */
+  .latest-short-wrap { max-width: 300px; margin: 40px auto 0; }
+  .latest-short-label { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 14px; }
+  .latest-short-wrap .video-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.15); }
 
   /* FOOTER */
   footer { padding: 28px 24px; text-align: center; background: var(--navy); border-top: 1px solid rgba(201,168,76,0.15); }
@@ -421,6 +418,10 @@
     <span class="section-label">Connect</span>
     <h2 class="section-title">Find Me Online</h2>
     <div class="social-links">
+      <a href="https://www.youtube.com/@the_uncensoredpast" class="social-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
       <a href="https://x.com/KukusjbK" class="social-btn" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         X (Twitter)
@@ -430,16 +431,14 @@
         Instagram
       </a>
     </div>
-  </div>
-</section>
 
-<!-- FEATURED INSTAGRAM POST -->
-<section class="ig-featured-outer">
-  <div class="section-wrap">
-    <span class="section-label">From Instagram</span>
-    <h2 class="section-title">Featured Post</h2>
-    <div class="ig-embed-wrap">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reels/DbK-5J3RZBh/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; margin:0 auto; max-width:400px; width:100%;"></blockquote>
+    <div class="latest-short-wrap">
+      <p class="latest-short-label">Latest short</p>
+      <div class="video-card">
+        <div class="video-embed shorts" id="embed-latest-short">
+          <span class="yt-loading">Loading…</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -538,10 +537,8 @@
   loadLatestVideo('embed-allie',          'PLVKRQHZ1Ya2EMN1A9Iy5QNhB69tZbNPyR');
   loadLatestVideo('embed-crbc',           'PL6RXzPfS-RQdaGxF7g97raS7ydKzcPV17');
   loadLatestVideo('embed-crossexamined',  'PLU-nJq1k5wmjepv8FZv6MdFP02DgokgCt');
+  loadLatestVideo('embed-latest-short',   'PLYdwgPMmiN7M');
 </script>
-
-<!-- Instagram embed script: renders the blockquote above as the live post/reel -->
-<script async src="//www.instagram.com/embed.js"></script>
 
 </body>
 </html>
